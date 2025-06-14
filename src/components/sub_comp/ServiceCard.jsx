@@ -1,11 +1,23 @@
 import React from 'react';
 
-function ServiceCard({ img, title, desc, reverse = false }) {
+function ServiceCard({ img, title, desc }) {
     return (
-        <div className="services w-[100vw] h-auto">
-            <div className="img">
-                <img src={img} className='min-w-[100vw] my-10 ' alt={title} />
+        <div className="glass-s m-4 p-4 flex flex-col justify-start items-center w-[70vw] md:min-h-[70vh]  rounded-[5px] md:w-[90vw] md:flex-row md:min-h-[auto] ">
+            <div className="img w-full md:w-[60%] flex justify-center">
+                <img
+                    src={img}
+                    alt={title}
+                    className="max-w-full h-auto object-contain"
+                />
+            </div>
 
+            <div className="text  md:w-[40%] mt-4 mx-4 h-auto w-full break-words">
+                <h2 className="poppins-black text-base sm:text-lg dark-text-s light-text-s md:text-4xl leading-snug break-words whitespace-normal">
+                    {title}
+                </h2>
+                <p className="poppins-regular md:text-md text-sm dark-text-l light-text-l leading-relaxed mt-2 whitespace-normal">
+                    {desc}
+                </p>
             </div>
         </div>
     );

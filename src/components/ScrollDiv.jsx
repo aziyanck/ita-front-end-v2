@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 
+
+
 function ScrollDiv() {
     const typedRef = useRef(null);
     useEffect(() => {
@@ -38,7 +40,7 @@ function ScrollDiv() {
     return (
         <div
             ref={divRef}
-            className="h-screen overflow-y-auto hide-scrollbar  p-4 snap-y snap-mandatory"
+            className="h-screen snap-start bg-amber-400 text-st overflow-y-auto hide-scrollbar  p-4 snap-y snap-mandatory"
         >
             <div className="h-[200vh] ">
                 <div className='snap-start flex flex-col h-screen justify-center items-center snap-always'>
@@ -55,10 +57,7 @@ function ScrollDiv() {
 
                     </h4>
                 </div>
-                <div className='snap-start flex flex-col h-screen justify-center items-center snap-always'>
-                    <h2 className='text-base md:text-lg poppins-bold pb-5 md:pb-2'>“Let <span className="bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent  group-[.dark-mode]:bg-gradient-to-r group-[.dark-mode]:from-fuchsia-500 group-[.dark-mode]:to-pink-500 poppins-bold">IndusTech Automations</span>  turn your everyday moments into extraordinary ones.”</h2>
                 
-                </div>
             </div>
         </div>
     );

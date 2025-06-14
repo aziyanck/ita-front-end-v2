@@ -208,6 +208,10 @@ body {
 } */
 /* blure gradient */
 
+.text-st {
+  @apply text-[#1b1a2c] group-[.dark-mode]:text-white
+}
+
 .light-text-s {
   @apply text-[#1b1a2c]
 }
@@ -237,13 +241,16 @@ body {
 }
 
 .card-v {
-  @apply m-4 flex flex-col md:w-[25%] md:h-[40vh] justify-center items-center gap-4 rounded-2xl bg-white/10 backdrop-blur-lg shadow-2xl shadow-blue-300 group-[.dark-mode]:shadow-none group-[.dark-mode]:shadow-2xl transition-transform duration-200 ease-in-out hover:scale-101 hover:cursor-pointer hover:border-2 hover:border-[#4b4880] hover:group-[.dark-mode]:border-white
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  @apply m-4 flex flex-col md:w-[25%] md:h-[40vh] justify-center items-center gap-4 rounded-2xl bg-white/10 backdrop-blur-lg  group-[.dark-mode]:shadow-none group-[.dark-mode]:shadow-2xl transition-transform duration-200 ease-in-out hover:scale-101 hover:cursor-pointer hover:border-2 hover:border-[#4b4880] hover:group-[.dark-mode]:border-white
 }
 
 
-.i-box{
-  @apply px-4 w-auto placeholder-gray-400 py-2 border border-gray-300 rounded-lg  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300
+.i-box {
+  @apply px-4 w-auto placeholder-gray-400 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300
 }
+
 .glass {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
@@ -252,21 +259,22 @@ body {
   -webkit-backdrop-filter: blur(8.9px);
   border: 1px solid rgba(255, 255, 255, 0.83);
 }
+
 .glass-h {
   background: rgba(255, 255, 255, 0.05);
-  
+
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.9px);
   -webkit-backdrop-filter: blur(8.9px);
 }
 
-.bgg{
-@apply bg-white group-[.dark-mode]:bg-[#161616]  
+.bgg {
+  @apply bg-white group-[.dark-mode]:bg-[#161616]
 }
 
 html.dark-mode body {
   background: #161616;
-  
+
 }
 
 
@@ -276,6 +284,8 @@ html.dark-mode body {
 }
 
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }

@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import mainBg from '../assets/mainBGImg.png';
+import mainBg from '../assets/mainBGImg.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,7 +40,7 @@ function ScrollDiv() {
         start: 'top 80%',
         end: 'top 20%',
         toggleActions: 'play reverse play reverse',
-        markers: true,
+       
       },
       x: 100,
       opacity: 0,

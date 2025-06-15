@@ -40,7 +40,7 @@ function ScrollDiv() {
         start: 'top 80%',
         end: 'top 20%',
         toggleActions: 'play reverse play reverse',
-       
+
       },
       x: 100,
       opacity: 0,
@@ -106,10 +106,10 @@ function ScrollDiv() {
       />
 
       {/* Black gradient overlay */}
-      <div className="fixed top-0 left-0 w-full h-screen bg-gradient-to-l from-white group-[.dark-mode]:from-black  via-white/50 group-[.dark-mode]:via-black/50 to-transparent z-10" />
+<div className="fixed top-0 left-0 w-full h-screen z-10  bg-black/30 md:bg-gradient-to-l md:from-white md:group-[.dark-mode]:from-black md:via-white/50 md:group-[.dark-mode]:via-black/50 md:to-transparent" />
 
       {/* Text Content */}
-      <div className="relative mobile z-20 md:mr-16 text-st text-right">
+      <div className="relative mobile z-20 md:mr-16 dark-text-s md:text-[#161616] md:group-[.dark-mode]:text-white text-right">
         <h1
           ref={headlineRef}
           className="text-2xl md:text-5xl poppins-extrabold leading-relaxed pb-8"
@@ -130,7 +130,7 @@ function ScrollDiv() {
 
         <h4
           ref={typeRef}
-          className="text-st text-lg "
+          className=" text-lg "
         >
           <span className='text-xl poppins-bold' ref={typedRef}></span>
         </h4>

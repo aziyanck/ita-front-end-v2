@@ -209,11 +209,11 @@ body {
 /* blure gradient */
 
 .text-st {
-  @apply text-[#1b1a2c] group-[.dark-mode]:text-white
+  @apply text-[#161616] group-[.dark-mode]:text-white
 }
 
 .light-text-s {
-  @apply text-[#1b1a2c]
+  @apply text-[#161616]
 }
 
 .light-text-l {

@@ -272,6 +272,14 @@ body {
   @apply bg-white group-[.dark-mode]:bg-[#161616]
 }
 
+
+@media (max-width: 767px) {
+  .mobile {
+   @apply flex flex-col items-center text-center
+  }
+}
+
+
 html.dark-mode body {
   background: #161616;
 

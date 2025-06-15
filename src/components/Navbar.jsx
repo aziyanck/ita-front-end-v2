@@ -51,7 +51,7 @@ function Navbar() {
 
     return (
         <div
-            className={`navbar flex justify-between items-center h-[10vh] sticky top-0 z-[999] transition-all duration-300 px-6 ${scrolled ? 'bg-white/5 backdrop-blur-sm border-b border-grey-500 group-[.dark-mode]:border-white/10' : ''
+            className={` navbar flex justify-between w-screen items-center h-auto fixed top-0 left-0 z-[999] py-2 transition-all duration-300 px-6 ${scrolled ? 'bg-white/5 backdrop-blur-sm border-b border-grey-500 group-[.dark-mode]:border-white/10' : ''
                 }`}
         >
             {/* Left logo */}

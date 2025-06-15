@@ -96,7 +96,7 @@ function ScrollDiv() {
   return (
     <div
       ref={parenRef}
-      className="relative h-[200vh] w-full flex flex-col justify-center items-end p-4"
+      className="relative h-[100vh] w-full flex flex-col justify-center items-end p-4"
     >
       {/* Background image layer */}
       <img

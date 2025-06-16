@@ -6,14 +6,14 @@ function Review() {
 
 
     return (
-        <div className="review h-auto md:h-screen w-screen  flex flex-col justify-center items-center gap-10">
+        <div className="review h-auto md:h-screen w-screen z-[100] flex flex-col justify-center items-center gap-10">
 
             <div className="connect w-screen  h-[auto] flex flex-col justify-center items-center gap-8">
                 <h1 className="text-3xl poppins-extrabold text-st p-4">Connect Us With</h1>
                 <div className="bg-blue-100 group-[.dark-mode]:bg-[#313131] text-st w-screen md:h-[auto] py-10 flex justify-center items-center gap-15 text-3xl">
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i className="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i className="fa-brands fa-instagram"></i></a>
+                    <a href=""><i className="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
 

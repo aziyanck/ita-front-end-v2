@@ -9,7 +9,7 @@ const TestimonialCard = ({
   image
 }) => {
   return (
-    <div className=" bg-blue-100  group-[.dark-mode]:bg-[#1d2229]/50  text-st w-[400px] h-[200px] rounded-xl p-4 shadow-lg flex flex-col justify-between hover:scale-105 hover:cursor-pointer">
+    <div className="transition-all duration-300 ease-in-out bg-white/10 group-[.dark-mode]:bg-[#1d2229]/50 text-st w-[350px] h-[150px] md:w-[400px] md:h-[200px] rounded-xl p-4 shadow-lg flex flex-col justify-between hover:scale-105 hover:shadow-2xl hover:bg-blue-200 group-[.dark-mode]:hover:bg-[#2a2f38] hover:cursor-pointer">
       <p className="text-lt text-lg leading-relaxed line-clamp-3">
         {text}
       </p>

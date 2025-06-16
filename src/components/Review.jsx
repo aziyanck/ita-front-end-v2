@@ -9,7 +9,7 @@ function Review() {
         <div className="review h-auto md:h-screen w-screen z-[100] flex flex-col justify-center items-center gap-10">
 
             <div data-aos="fade-up" className="connect w-screen bg-blue-100 group-[.dark-mode]:bg-[#313131]/30 h-[auto] flex flex-col justify-center items-center gap-8">
-                <h1 className="text-3xl poppins-extrabold text-st p-4">Connect Us With</h1>
+                <h1 className="text-3xl poppins-extrabold text-st p-4">Connect With Us</h1>
                 <div className=" text-st w-screen md:h-[auto] pb-10 flex justify-center items-center gap-15 text-3xl ">
                     <a href="" className='hover:text-blue-400 hover-s-up'><i className="fa-brands fa-linkedin-in"></i></a>
                     <a href="" className='hover:text-pink-600 hover-s-up'><i className="fa-brands fa-instagram"></i></a>

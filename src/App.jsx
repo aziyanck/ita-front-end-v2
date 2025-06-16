@@ -9,6 +9,9 @@ import Brands from './components/Brands'
 import WhyIta from './components/WhyIta'
 import Contact from './components/Contact'
 import Review from './components/Review';
+import Features from './components/Features';
+
+
 
 
 
@@ -30,6 +33,7 @@ function App() {
       <Navbar />
       <ScrollDiv />
       <Services />
+      <Features />
       <div className='snap-start md:h-screen  flex flex-col justify-center items-center'>
         <Brands />
         <WhyIta />

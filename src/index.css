@@ -296,7 +296,7 @@ html.dark-mode body {
 
 }
 
-.hover-s-up{
+.hover-s-up {
   @apply hover:translate-y-[-4px] hover:scale-105 transition-all duration-300 ease-in-out
 }
 
@@ -309,4 +309,26 @@ html.dark-mode body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+
+
+
+
+@layer utilities {
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .transform-style {
+    transform-style: preserve-3d;
+  }
+
+  .rotate-x-180 {
+    transform: rotateX(180deg);
+  }
 }

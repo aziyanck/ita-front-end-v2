@@ -85,6 +85,7 @@ function ScrollDiv() {
         scrub: true,
       },
       opacity: 0,
+      
       duration: 1,
       delay: 0.5,
       ease: 'power2.out',
@@ -94,19 +95,18 @@ function ScrollDiv() {
   }, []);
 
   return (
-    <div
-      ref={parenRef}
-      className="relative h-[100vh] w-full flex flex-col justify-center items-end p-4"
-    >
+  <div
+  ref={parenRef}
+  className="relative h-[100vh] w-full flex flex-col justify-center items-end p-4 bg-cover bg-center"
+  style={{ backgroundImage: `url(${mainBg})` }}
+>
+
       {/* Background image layer */}
-      <img
-        src={mainBg}
-        alt="Background"
-        className="fixed top-0 left-0 w-full h-screen object-cover z-0"
-      />
+  
+    <div className="absolute top-0 left-0 w-full h-screen z-10  bg-black/30 md:bg-gradient-to-l md:from-white md:group-[.dark-mode]:from-black md:via-white/50 md:group-[.dark-mode]:via-black/50 md:to-transparent" />
+
 
       {/* Black gradient overlay */}
-<div className="fixed top-0 left-0 w-full h-screen z-10  bg-black/30 md:bg-gradient-to-l md:from-white md:group-[.dark-mode]:from-black md:via-white/50 md:group-[.dark-mode]:via-black/50 md:to-transparent" />
 
       {/* Text Content */}
       <div className="relative mobile z-20 md:mr-16 dark-text-s md:text-[#161616] md:group-[.dark-mode]:text-white text-right">

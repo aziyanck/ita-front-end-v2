@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
 
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -212,6 +218,10 @@ body {
   @apply text-[#161616] group-[.dark-mode]:text-white
 }
 
+.text-lt {
+  @apply text-[#040138] group-[.dark-mode]:text-white/90
+}
+
 .light-text-s {
   @apply text-[#161616]
 }
@@ -243,7 +253,7 @@ body {
 .card-v {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
-  @apply m-4 flex flex-col md:w-[25%] md:h-[40vh] justify-center items-center gap-4 rounded-2xl bg-white/10 backdrop-blur-lg  group-[.dark-mode]:shadow-none group-[.dark-mode]:shadow-2xl transition-transform duration-200 ease-in-out hover:scale-101 hover:cursor-pointer hover:border-2 hover:border-[#4b4880] hover:group-[.dark-mode]:border-white
+  @apply m-4 flex flex-col md:w-[25%] md:h-[40vh] justify-center items-center gap-4 rounded-2xl bg-white/10 backdrop-blur-lg group-[.dark-mode]:shadow-none group-[.dark-mode]:shadow-2xl transition-transform duration-200 ease-in-out hover:scale-101 hover:cursor-pointer hover:border-2 hover:border-[#4b4880] hover:group-[.dark-mode]:border-white
 }
 
 
@@ -275,7 +285,7 @@ body {
 
 @media (max-width: 767px) {
   .mobile {
-   @apply flex flex-col items-center text-center
+    @apply flex flex-col items-center text-center
   }
 
 }

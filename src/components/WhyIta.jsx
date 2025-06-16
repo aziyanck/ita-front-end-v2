@@ -10,7 +10,7 @@ function WhyIta() {
                 </p>
 
                 <div className="w-full flex flex-wrap justify-center items-stretch gap-6 p-4">
-                    <div className="card-v flex flex-col items-center md:w-[30vw] sm:w-[300px] bg-white/5 rounded-xl shadow p-4 transition-all hover:scale-105 hover:shadow-md ease-in-out duration-300">
+                    <div data-aos="fade-up" className="card-v flex flex-col items-center md:w-[30vw] sm:w-[300px] bg-white/5 rounded-xl shadow p-4 transition-all hover:scale-105 hover:shadow-md ease-in-out duration-300">
                         <div className="w-[80px] h-[80px] m-4 rounded-full flex justify-center items-center l-bg">
                             <i className="fa-solid fa-shield i-text text-xl"></i>
                         </div>
@@ -20,7 +20,7 @@ function WhyIta() {
                         </p>
                     </div>
 
-                    <div className="card-v flex flex-col items-center md:w-[30vw] sm:w-[300px] bg-white/5 rounded-xl shadow p-4 transition-all hover:scale-105 hover:shadow-md ease-in-out duration-300">
+                    <div data-aos="fade-up" className="card-v flex flex-col items-center md:w-[30vw] sm:w-[300px] bg-white/5 rounded-xl shadow p-4 transition-all hover:scale-105 hover:shadow-md ease-in-out duration-300">
                         <div className="w-[80px] h-[80px] m-4 rounded-full flex justify-center items-center l-bg">
                             <i className="fa-solid fa-user-plus i-text text-xl"></i>
                         </div>
@@ -30,7 +30,7 @@ function WhyIta() {
                         </p>
                     </div>
 
-                    <div className="card-v flex flex-col items-center md:w-[30vw] sm:w-[300px] bg-white/5 rounded-xl shadow p-4 transition-all hover:scale-105 hover:shadow-md ease-in-out duration-300">
+                    <div data-aos="fade-up" className="card-v flex flex-col items-center md:w-[30vw] sm:w-[300px] bg-white/5 rounded-xl shadow p-4 transition-all hover:scale-105 hover:shadow-md ease-in-out duration-300">
                         <div className="w-[80px] h-[80px] m-4 rounded-full flex justify-center items-center l-bg">
                             <i className="fa-solid fa-check-to-slot i-text text-xl"></i>
                         </div>

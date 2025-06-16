@@ -8,6 +8,7 @@ import ScrollDiv from './components/ScrollDiv';
 import Brands from './components/Brands'
 import WhyIta from './components/WhyIta'
 import Contact from './components/Contact'
+import Review from './components/Review';
 
 
 
@@ -34,6 +35,8 @@ function App() {
         <WhyIta />
       </div>
       <Contact />
+      <Review />
+      
 
     </div>
   )

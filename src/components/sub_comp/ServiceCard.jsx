@@ -2,12 +2,12 @@ import React from 'react';
 
 function ServiceCard({ img, title, desc }) {
     return (
-        <div className="  m-4 p-4 flex flex-col justify-start items-center w-[70vw] md:min-h-[70vh]  rounded-[5px] md:w-[90vw] md:flex-row md:min-h-[auto] ">
+        <div className=" m-4 flex flex-col justify-start items-center w-[80vw] md:min-h-[70vh]  rounded-[5px] md:w-[90vw] md:flex-row md:min-h-[auto] ">
             <div className="img w-full md:w-[60%] flex justify-center">
                 <img
                     src={img}
                     alt={title}
-                    className="max-w-full h-auto object-contain"
+                    className="max-w-full h-auto object-contain rounded"
                 />
             </div>
 

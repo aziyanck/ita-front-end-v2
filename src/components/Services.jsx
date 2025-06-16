@@ -54,7 +54,7 @@ function Services() {
                 {serviceData.map((item, index) => (
                     <div
                         key={index}
-                        className="inline-block snap-start w-screen px-4 box-border"
+                        className="inline-block snap-start w-screen px-0 box-border"
                     >
                         <div className="flex justify-center">
                             <ServiceCard

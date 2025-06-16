@@ -296,7 +296,9 @@ html.dark-mode body {
 
 }
 
-
+.hover-s-up{
+  @apply hover:translate-y-[-4px] hover:scale-105 transition-all duration-300 ease-in-out
+}
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;

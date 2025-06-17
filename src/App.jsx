@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from './components/Navbar'
-import Home from './components/Home'
+
 import Services from './components/Services'
 import ScrollDiv from './components/ScrollDiv';
 import Brands from './components/Brands'
@@ -34,6 +34,9 @@ function App() {
       <ScrollDiv />
       <Services />
       <Features />
+      <Features />
+      <Features />
+      
       <div className='snap-start md:h-screen  flex flex-col justify-center items-center'>
         <Brands />
         <WhyIta />

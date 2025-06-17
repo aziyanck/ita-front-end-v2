@@ -1,8 +1,23 @@
 
+import { useState, useEffect } from 'react';
+
 import TestimonialCard from '../components/sub_comp/TestimonialCard';
 import testimonialData from '../components/sub_comp/testimonial_data';
+import getCombinedReviews from '../components/sub_comp/combined_review';
 
 function Review() {
+
+
+    const [reviewData, setReviewData] = useState([]);
+
+    useEffect(() => {
+        const fetchReviews = async () => {
+            const reviews = await getCombinedReviews();
+            setReviewData(reviews.slice(0, 5)); // Show only the first 5 if needed
+        };
+
+        fetchReviews();
+    }, []);
 
 
     return (
@@ -26,18 +41,24 @@ function Review() {
 
                 </div>
                 <div className="right w-auto h-full">
+
                     <div data-aos="slide-up" className="p-6 md:p-10 flex flex-wrap gap-6 justify-center">
-                        {testimonialData.map((testimonial, index) => (
-                            <TestimonialCard
-                                key={index}
-                                text={testimonial.text}
-                                name={testimonial.name}
-                                role={testimonial.role}
-                                rating={testimonial.rating}
-                                image={testimonial.image}
-                            />
-                        ))}
+                        {reviewData.length === 0 ? (
+                            <p className="text-gray-400 text-center">Loading reviews...</p>
+                        ) : (
+                            reviewData.map((review, index) => (
+                                <TestimonialCard
+                                    key={index}
+                                    text={review.text}
+                                    name={review.name}
+                                    role={review.role}
+                                    rating={review.rating}
+                                    image={review.image}
+                                />
+                            ))
+                        )}
                     </div>
+
                 </div>
 
 

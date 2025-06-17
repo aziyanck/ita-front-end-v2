@@ -31,7 +31,7 @@ function App() {
 
 
   return (
-    <div className='snap-y snap-mandatory overflow-x-clip'>
+    <div className=' overflow-x-clip'>
       <Navbar />
       <ScrollDiv />
       <Services />
@@ -45,7 +45,7 @@ function App() {
         />
       ))}
 
-      <div className='snap-start md:h-screen  flex flex-col justify-center items-center'>
+      <div className=' md:h-screen  flex flex-col justify-center items-center'>
         <Brands />
         <WhyIta />
       </div>

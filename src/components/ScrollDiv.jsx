@@ -130,7 +130,7 @@ function ScrollDiv() {
 
         <h4
           ref={typeRef}
-          className=" text-lg "
+          className=" pt-18 text-lg "
         >
           <span className='text-xl poppins-bold' ref={typedRef}></span>
         </h4>

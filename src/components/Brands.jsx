@@ -8,7 +8,7 @@ function Brands() {
     return (
         <div className="snap-start w-full h-[auto]  text-center dark-text-s light-text-s ">
             <div className="flex flex-col justify-center items-center w-full">
-                <h1 data-aos="fade-down" className="text-2xl poppins-extrabold">Our System Works with</h1>
+                <h1 data-aos="fade-down" className="text-2xl md:text-3xl poppins-extrabold">Our System Works with</h1>
 
                 <div className="m-4 flex flex-col w-full bg-blue-100 group-[.dark-mode]:bg-[#313131]/30 justify-center items-center">
                     <h1 data-aos="fade-up" data-aos-delay="100" className="mt-4 text-lg"></h1>

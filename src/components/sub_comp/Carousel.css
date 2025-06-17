@@ -43,7 +43,7 @@
         display: grid;
         place-items: center;
         border: 1px solid light-dark(rgba(0 0 0 / 0.25), rgba(255 255 255 / 0.15));
-        border-radius: 10px;
+        border-radius: 5px;
         background: light-dark(white, rgba(255 255 255 / 0.05));
         color: light-dark(rgb(49, 65, 88), white);
         overflow: hidden;
@@ -64,7 +64,7 @@
         /* ✅ Ensures image fits without cropping */
         background-color: light-dark(#fff, #111);
         /* Optional for padding zones */
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     /* Unused parts removed or simplified */

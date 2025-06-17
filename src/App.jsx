@@ -11,6 +11,8 @@ import Contact from './components/Contact'
 import Review from './components/Review';
 import Features from './components/Features';
 
+import featuresData from './components/sub_comp/features_data';
+
 
 
 
@@ -22,7 +24,7 @@ function App() {
       duration: 1000,
       once: false,
       mirror: true,
-      
+
     })
 
   }, []);
@@ -33,17 +35,23 @@ function App() {
       <Navbar />
       <ScrollDiv />
       <Services />
-      <Features />
-      <Features />
-      <Features />
-      
+
+      {featuresData.map((section, index) => (
+        <Features
+          key={index}
+          title={section.title}
+          mainImage={section.mainImage}
+          carouselImages={section.carouselImages}
+        />
+      ))}
+
       <div className='snap-start md:h-screen  flex flex-col justify-center items-center'>
         <Brands />
         <WhyIta />
       </div>
       <Contact />
       <Review />
-      
+
 
     </div>
   )

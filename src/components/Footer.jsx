@@ -1,7 +1,4 @@
-import logo from "../assets/logo.png"
-import logob from "../assets/logob.png"
 
-import { useEffect, useState } from "react";
 
 
 function Footer() {

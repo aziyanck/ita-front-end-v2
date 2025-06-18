@@ -321,9 +321,6 @@ html.dark-mode body {
   @apply bg-gradient-to-r from-slate-900 to-gray-800 group-[.dark-mode]:from-[#ffffff] group-[.dark-mode]:to-[#acacac] bg-clip-text text-transparent
 }
 
-
-
-
 @layer utilities {
   .backface-hidden {
     backface-visibility: hidden;
@@ -342,5 +339,44 @@ html.dark-mode body {
   }
 }
 
+@keyframes slideFull {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
 
+.animate-slideFull {
+  animation: slideFull 15s linear infinite;
+}
 
+@keyframes logoCarousel {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-logoCarousel {
+  animation: logoCarousel 6s ease-in-out infinite;
+  height: 240px; /* must match container height */
+}
+@keyframes logoCarouselUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-logoCarouselUp {
+  animation: logoCarouselUp 6s linear infinite;
+}

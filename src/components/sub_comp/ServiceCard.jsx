@@ -3,11 +3,11 @@ import React from 'react';
 function ServiceCard({ img, title, desc }) {
     return (
         <div className=" m-4 flex flex-col justify-start items-center w-[80vw]   rounded-[5px] md:w-[90vw] md:flex-row md:min-h-[auto] ">
-            <div class="img w-full md:w-full flex justify-center">
+            <div className="img w-full md:w-full flex justify-center">
                 <img
                     src={img}
                     alt={title}
-                    class="w-full  object-fill rounded"
+                    className="w-full  object-fill rounded"
                 />
             </div>
 

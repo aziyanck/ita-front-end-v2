@@ -23,7 +23,7 @@ function Review() {
 
 
     return (
-        <div className="review h-auto md:h-screen w-screen z-[100] flex flex-col justify-center items-center gap-10">
+        <div className="review h-auto  w-screen z-[100] flex flex-col justify-center items-center gap-10">
 
             <div data-aos="fade-up" className="connect w-screen bg-blue-100 group-[.dark-mode]:bg-[#313131]/30 h-[auto] flex flex-col justify-center items-center gap-8">
                 <h1 className="text-3xl poppins-extrabold text-st p-4">Connect With Us</h1>

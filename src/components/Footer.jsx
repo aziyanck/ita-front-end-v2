@@ -1,0 +1,53 @@
+import logo from "../assets/logo.png"
+import logob from "../assets/logob.png"
+
+import { useEffect, useState } from "react";
+
+
+function Footer() {
+    return (
+        <footer class="bg-black/5 group-[.dark-mode]:bg-black/40 text-white py-8">
+            <div class="max-w-7xl text-ft mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">Secure Home</h3>
+                    <p class="text-gray-400 text-sm">
+                        Protecting your home and family with advanced security solutions, <br /> smart automation, and 24/7 monitoring services.
+                    </p>
+                </div>
+
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Security Systems</li>
+                        <li>Smart Lighting</li>
+                        <li>Video Surveillance</li>
+                        <li>Smart Locks</li>
+                        <li>Fire Detection</li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><i class="fa-solid fa-phone"></i> 9999 9999 99</li>
+                        <li><i class="fa-solid fa-envelope"></i> hxkxbmabh.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Moonrumavadi</li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">Business Hours</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 4:00 PM</li>
+                        <li>Sunday: Emergency calls only</li>
+                        <li>24/7 Emergency Support</li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+    )
+}
+export default Footer;

@@ -222,6 +222,11 @@ body {
   @apply text-[#040138] group-[.dark-mode]:text-white/90
 }
 
+.text-ft {
+  @apply text-[#3a393a] group-[.dark-mode]:text-white/90
+}
+
+
 .light-text-s {
   @apply text-[#161616]
 }
@@ -312,8 +317,8 @@ html.dark-mode body {
 }
 
 
-.gd-text{
-  @apply bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent 
+.gd-text {
+  @apply bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent
 }
 
 
@@ -336,4 +341,6 @@ html.dark-mode body {
     transform: rotateX(180deg);
   }
 }
+
+
 

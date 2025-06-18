@@ -10,6 +10,8 @@ import WhyIta from './components/WhyIta'
 import Contact from './components/Contact'
 import Review from './components/Review';
 import Features from './components/Features';
+import Footer from './components/Footer';
+
 
 import featuresData from './components/sub_comp/features_data';
 
@@ -51,6 +53,7 @@ function App() {
       </div>
       <Contact />
       <Review />
+      <Footer />
 
 
     </div>

@@ -119,10 +119,10 @@ function ScrollDiv() {
 
         <h2
           ref={subtitleRef}
-          className="text-base md:text-lg poppins-bold pb-3"
+          className="text-base md:text-xl poppins-bold pb-3"
         >
           “Let{" "}
-          <span className="poppins-bold bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent group-[.dark-mode]:from-fuchsia-500 group-[.dark-mode]:to-pink-500">
+          <span className="poppins-extrabold bg-gradient-to-r from-blue-900 to-blue-900 bg-clip-text text-transparent group-[.dark-mode]:from-fuchsia-500 group-[.dark-mode]:to-pink-500">
             IndusTech Automations
           </span>{" "}
           turn your everyday moments into extraordinary ones.”
@@ -130,9 +130,9 @@ function ScrollDiv() {
 
         <h4
           ref={typeRef}
-          className=" pt-18 text-lg "
+          className=" pt-18 text-lg  "
         >
-          <span className='text-xl poppins-bold' ref={typedRef}></span>
+          <span className='text-xl md:text-3xl poppins-bold' ref={typedRef}></span>
         </h4>
       </div>
     </div>

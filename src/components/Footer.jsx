@@ -7,9 +7,9 @@ function Footer() {
             <div class="max-w-7xl text-ft mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
                 <div class="col-span-1">
-                    <h3 class="text-lg font-semibold mb-4">Secure Home</h3>
+                    <h3 class="text-lg font-semibold mb-4">About Us</h3>
                     <p class="text-gray-400 text-sm">
-                        Protecting your home and family with advanced security solutions, <br /> smart automation, and 24/7 monitoring services.
+                        Industech Automations (ITA), established in 2015 in Madurai, offers smart automation and security solutions for homes and industries. Our expert team ensures seamless system design, integration, and control.
                     </p>
                 </div>
 

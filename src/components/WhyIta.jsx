@@ -2,7 +2,7 @@ function WhyIta() {
     return (
         <div className="flex justify-center items-center w-full h-auto dark-text-s light-text-s p-4">
             <div className="flex flex-col justify-center items-center w-full max-w-6xl">
-                <h1 data-aos="fade-down" className="text-2xl md:text-3xl poppins-extrabold p-4 mt-8 text-center">
+                <h1 data-aos="fade-down" className="text-2xl md:text-3xl gd-text poppins-extrabold p-4 mt-8 text-center">
                     Why Choose ITA?
                 </h1>
                 <p className="pb-4 light-text-vl dark-text-l text-center text-sm md:text-base max-w-xl">

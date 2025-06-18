@@ -318,7 +318,7 @@ html.dark-mode body {
 
 
 .gd-text {
-  @apply bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent
+  @apply bg-gradient-to-r from-slate-900 to-gray-800 group-[.dark-mode]:from-[#ffffff] group-[.dark-mode]:to-[#acacac] bg-clip-text text-transparent
 }
 
 

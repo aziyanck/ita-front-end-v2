@@ -43,7 +43,7 @@ function Services() {
 
     return (
         <div id="services" className="w-full h-auto pb-40 xl:pb-0 lg:h-screen overflow-hidden flex flex-col justify-center items-center">
-            <h1 className="text-3xl poppins-extrabold text-st p-4">Services</h1>
+            <h1 className="text-3xl poppins-extrabold  gd-text p-4">Services</h1>
 
             {/* Horizontal Scroll Container */}
             <div

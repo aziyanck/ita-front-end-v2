@@ -380,3 +380,11 @@ html.dark-mode body {
 .animate-logoCarouselUp {
   animation: logoCarouselUp 6s linear infinite;
 }
+@keyframes floatVertical {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(-150vh);
+  }
+}

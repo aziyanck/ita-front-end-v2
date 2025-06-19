@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './brand_logo.css';
 
 function BrandLogos() {
   const [logos, setLogos] = useState([]);
@@ -16,37 +17,41 @@ function BrandLogos() {
     rows.push(logos.slice(i, i + 7));
   }
 
+  const twoRows = rows.slice(0, 2); // just 2 rows
+
   return (
-    <div className="relative w-full bg-transparent flex flex-col items-center">
-      
-      <h1
-        data-aos="fade-down"
-        className="text-2xl md:text-3xl gd-text poppins-extrabold mt-8 mb-2 text-center"
-      >
+    <div className="relative w-full flex flex-col items-center bg-transparent">
+      <h1 className="text-2xl md:text-3xl font-extrabold gd-text mt-8 mb-2 text-center">
         Connected Experiences
       </h1>
+      <p className="text-center text-base font-medium text-gray-800 dark:text-gray-200 max-w-4xl mb-6 px-4">
+        Our flexible platform can integrate diverse products from leading manufacturers.
+      </p>
 
-      <div className="relative w-full h-[220px] bg-white/5 rounded-xl overflow-hidden">
-        
-        <div className="absolute inset-0 flex items-center justify-center z-0 text-center text-[20px] md:text-2xl px-6 font-semibold text-gray-700 dark:text-gray-300 pointer-events-none leading-relaxed">
-          INDUSTECH AUTOMATIONS’s flexible platform has integrated
-          diverse products from leading manufacturers.
-        </div>
-
-        <div className="relative z-10 flex flex-col items-center gap-4">
-          {rows.map((row, rowIndex) => (
-            <div
-              key={rowIndex}
-              className={`flex justify-center items-center gap-8 h-[120px] animate-logoCarouselUp ${
-                rowIndex % 2 !== 0 ? "animation-delay-3000" : ""
-              }`}
-            >
+      <div className="logo-box">
+        <div className="logo-slider">
+          {twoRows.map((row, rowIndex) => (
+            <div key={rowIndex} className="logo-row">
               {row.map((logo, index) => (
                 <img
-                  key={index}
+                  key={`${rowIndex}-${index}`}
                   src={logo}
                   alt={`logo-${index}`}
-                  className="w-[80px] h-[80px] object-contain rounded-md"
+                  className="logo-img"
+                />
+              ))}
+            </div>
+          ))}
+
+          {/* Duplicate rows once for loop */}
+          {twoRows.map((row, rowIndex) => (
+            <div key={`duplicate-${rowIndex}`} className="logo-row">
+              {row.map((logo, index) => (
+                <img
+                  key={`duplicate-${rowIndex}-${index}`}
+                  src={logo}
+                  alt={`logo-${index}`}
+                  className="logo-img"
                 />
               ))}
             </div>

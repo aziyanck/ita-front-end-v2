@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+.logo-box {
+  height: 260px; /* Show only 2 rows (2 x 130px) */
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.logo-slider {
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 8s linear infinite;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px; /* Horizontal spacing for large screens */
+  height: 130px; /* Each row height */
+  padding: 10px 0;
+}
+
+.logo-img {
+  width: 80px;  /* Default size for large screens */
+  height: 80px; /* Default size for large screens */
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Animate full height of 2 rows = 260px */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-260px);
+  }
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 1024px) {
+  .logo-row {
+    gap: 30px; /* Reduce gap */
+  }
+  .logo-img {
+    width: 70px; /* Reduce logo size */
+    height: 70px;
+  }
+}
+
+/* Responsive adjustments for smaller tablets */
+@media (max-width: 768px) {
+  .logo-row {
+    gap: 20px; /* Further reduce gap */
+  }
+  .logo-img {
+    width: 60px; /* Further reduce logo size */
+    height: 60px;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 640px) {
+  .logo-row {
+    gap: 15px; /* Minimize gap for small screens */
+  }
+  .logo-img {
+    width: 45px; /* Make logos smaller for mobile */
+    height: 45px;
+  }
+}

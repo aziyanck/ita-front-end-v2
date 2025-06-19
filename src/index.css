@@ -322,7 +322,7 @@ html.dark-mode body {
 }
 
 .gd-text {
-  @apply text-transparent bg-clip-text bg-[linear-gradient(90deg,_#1CB5E0_0%,_#000851_100%)] group-[.dark-mode]:bg-gradient-to-r group-[.dark-mode]:from-[#ffffff] group-[.dark-mode]:to-[#868686]
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-950 to-cyan-800 group-[.dark-mode]:bg-gradient-to-r group-[.dark-mode]:from-[#ffffff] group-[.dark-mode]:to-[#868686]
 }
 
 

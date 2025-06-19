@@ -4,6 +4,8 @@ import logo from '../assets/logo.png';
 import logob from '../assets/logob.png';
 import '../index.css';
 
+import ButtonLogin from './animations/ButtonLogin'
+
 function Navbar() {
     const [scrolled, setScrolled] = React.useState(false);
     const [isDarkMode, setDarkMode] = React.useState(false);
@@ -66,8 +68,10 @@ function Navbar() {
                 {/* Desktop Menu */}
                 <ul className='hidden md:flex gap-10 dark-text-s group-[.dark-mode]:[&>*]:hover:text-emerald-50 light-text-s [&>*]:hover:scale-105 [&>*]:hover:text-cyan-950 [&>*]:poppins-bold'>
                     <li><a href="#services" className='poppins-bold'>Services</a></li>
-                    <li><a href="#about"className='poppins-bold'>About</a></li>
-                    <li><a href="#contact"className='poppins-bold'>Contact</a></li>
+                    <li><a href="#about" className='poppins-bold'>About</a></li>
+                    <li><a href="#contact" className='poppins-bold'>Contact</a></li>
+                    <li><ButtonLogin /></li>
+
                 </ul>
 
                 {/* Mobile Menu */}
@@ -86,7 +90,7 @@ function Navbar() {
                     onChange={toggleDarkMode}
                     size={30}
                     className="ml-4"
-                    sunColor="#020024"    
+                    sunColor="#020024"
                     moonColor="#fff"
                 />
 
@@ -105,6 +109,7 @@ function Navbar() {
                         <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
                         <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
                         <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+                        <li > <a href="#" onClick={() => setMenuOpen(false)}>LogIn</a></li>
                     </ul>
 
                 </div>

@@ -2,7 +2,7 @@ function Contact() {
     return (
         <div id="contact"  className=" w-screen h-auto min-h-screen flex flex-col items-center justify-center dark-text-s light-text-s px-4 py-8">
             <div data-aos="fade-up" className="text-center max-w-xl">
-                <h1 className="poppins-extrabold text-3xl">Get a Free Smart Home Consultation</h1>
+                <h1 className="poppins-extrabold gd-text text-3xl">Get a Free Smart Home Consultation</h1>
                 <p className="text-sm poppins-regular m-4 text-center dark-text-l light-text-l">
                     Please let us know how we can help you and one of our Smart Home experts will follow-up with you in the next 24 hours
                 </p>

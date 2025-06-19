@@ -103,7 +103,7 @@ function ScrollDiv() {
 
       {/* Background image layer */}
   
-    <div className="absolute top-0 left-0 w-full h-screen z-10  bg-black/30 md:bg-gradient-to-l md:from-white md:group-[.dark-mode]:from-black md:via-white/50 md:group-[.dark-mode]:via-black/50 md:to-transparent" />
+    <div className="absolute top-0 left-0 w-full h-screen z-10  bg-black/30 md:bg-gradient-to-l md:from-white md:group-[.dark-mode]:from-black md:via-white/70 md:group-[.dark-mode]:via-black/50 md:to-transparent" />
 
 
       {/* Black gradient overlay */}
@@ -122,7 +122,7 @@ function ScrollDiv() {
           className="text-base md:text-xl poppins-bold pb-3"
         >
           “Let{" "}
-          <span className="poppins-extrabold bg-gradient-to-r from-blue-900 to-blue-900 bg-clip-text text-transparent group-[.dark-mode]:from-fuchsia-500 group-[.dark-mode]:to-pink-500">
+          <span className="poppins-extrabold bg-gradient-to-r from-fuchsia-500 to-pink-500 md:from-red-800 md:to-orange-700 bg-clip-text text-transparent group-[.dark-mode]:from-fuchsia-500 group-[.dark-mode]:to-pink-500">
             IndusTech Automations
           </span>{" "}
           turn your everyday moments into extraordinary ones.”
